@@ -1,0 +1,387 @@
+body{
+	margin: 0;
+}
+
+
+#sidebar h2{
+	padding-top: 30px;
+	font-family:'Open Sans', sans-serif;
+	font-size: 25pt;
+	color: #C4D037;
+	margin:0;
+}
+
+#sidebar h5{
+	padding-left: 12px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+#sidebar img{
+	width: 400px;
+	height: auto;
+}
+
+#sidebar {
+	margin: 0;
+	height: 100%; /* 100% Full-height */
+	width: 400px;
+	background-color: #F2F2F2;
+	position: fixed;
+	z-index: 1; /* Stay on top */
+	overflow: auto;
+	text-align: left;
+	border-right: 1px solid silver;
+	top: 0;
+	left: 0;
+	overflow-x: hidden; /* Disable horizontal scroll */
+	padding-top: 60px; /* Place content 60px from the top */
+	padding-left: 10px;
+	transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+  font-family: 'Roboto', sans-serif;
+}
+
+
+#sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  font-size: 36px;
+  margin-left: 80px;
+  color: #4D4D4D;
+}
+
+
+#moreinfo {
+	padding: 10px;
+	margin-bottom: 20%;
+}
+
+#content {
+	height:1000px;
+	transition: margin-left .5s; /* If you want a transition effect */
+	padding: 20px;
+  margin-left: 400px;
+}
+
+/*打开侧边栏按钮*/
+#openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  color: gray;
+  padding: 10px 15px;
+  border: none;
+  position: absolute;
+  top: 140px;
+  right: 10px;
+  font-size: 18px;
+  margin-left: 500px;
+  color: #4D4D4D;
+  font-family:'Lato',sans-serif;
+}
+
+#openbtn:hover {
+  color: #007bff;
+}
+
+#closebtn {
+  font-size: 20px;
+  cursor: pointer;
+  color: gray;
+  padding: 10px 15px;
+  border: none;
+  position: absolute;
+  top: 140px;
+  right: 10px;
+  font-size: 18px;
+  margin-left: 500px;
+  color: #4D4D4D;
+  font-family:'Lato',sans-serif;
+}
+
+#closebtn:hover {
+  color: #007bff;
+}
+
+/*#increaseFont {
+  font-size: 20px;
+  cursor: pointer;
+  color: #272727;
+  padding: 10px 15px;
+  border: none;
+  position: absolute;
+  top: 15em;
+  left: 10px;
+  font-size: 1.4em;
+  font-family: 'PT+Sefif',serif;
+  margin-right: 500px;
+  color: #4D4D4D;
+}
+#increaseFont:hover {
+  color: #C4D037
+}
+
+#decreaseFont {
+  font-size: 20px;
+  cursor: pointer;
+  color: #272727;
+  padding: 10px 15px;
+  border: none;
+  position: absolute;
+  top: 18em;
+  left: 10px;
+  font-size: 1.4em;
+  font-family: 'PT+Sefif',serif;
+  margin-right: 500px;
+  color: #4D4D4D;
+}
+
+#decreaseFont:hover {
+color: #C4D037;
+}
+*/
+.page-header {
+	background-color: #f0f0f0;
+	padding: 20px;
+	margin-top: 20px;
+	margin-bottom: 30px;
+	border-radius: 10px;
+}
+
+#context p{
+	color: #5e5e5e;
+	margin-bottom: 20px;
+  letter-spacing: 0.004em;
+  line-height: 1.5;
+  font-size: 18px;
+  font-weight:400;
+  font-family: 'Source Serif Pro', serif;
+  border-bottom: 0.5px solid silver;
+}
+
+
+#Instruct {
+  color:#5e5e5e;
+  box-shadow: 0px 0px 0px 0px;
+  border: 0.5px solid #DFDFDF;
+  padding: 16px;
+  width: 30em;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+#nextPageQuestion1 #nextPageQuestion2{
+  font-family:'Lato',sans-serif;
+  font-size: 18px;
+  letter-spacing: 0.004em;
+  line-height: 1.5;
+}
+
+/*撤销及后退按钮格式*/
+
+.ud {
+  background-color: #007bff; 
+  color: white;
+  border: none;
+  border-radius: 3px;
+  padding:5px 5px;
+  width: 50%;
+  margin:3px;
+}
+
+.ud:hover {
+  background-color: #0069D9;
+  cursor: pointer;
+}
+
+.ca {
+  background-color: #A7A8A9; 
+  color: white;
+  border-radius: 3px;
+  padding:5px 5px;
+  width: 50%;
+  margin:3px;
+}
+
+.ca:hover {
+  background-color: #888B8D;
+  cursor: pointer;
+}
+
+.toolText {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 5px;
+  font-size: 10pt;
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+  left:60px;  
+}
+
+.ud:hover .toolText {
+  visibility: visible;
+}
+.ca:hover .toolText {
+  visibility: visible;
+}
+
+.col-md-5 p{
+	font-family: 'Source Serif Pro', serif;
+  padding: 10px;
+  letter-spacing: 0.004em;
+  line-height: 1.5;
+  font-size: 18px;
+  font-weight:400;
+  /*cursor: url('https://ionicframework.com/img/finger.png'), auto;*/
+
+	/*border-radius:5px;
+	border-right: 1px solid gray;*/
+}
+
+.col-md-1 {
+  padding:0px;
+}
+.col-md-6 p{
+  font-family: 'Lato', sans-serif;
+  font-size: 17px;
+  letter-spacing: 0.004em;
+  line-height: 1.5;
+}   
+
+.card {
+  box-shadow: 2px 2px 1px -1px rgba(0, 0, 0, 0.2), 2px 2px 1px -1px rgba(0, 0, 0, 0.14), 2px 2px 1px -1px rgba(0, 0, 0, 0.12);
+}       
+.card-body{
+  margin:0 auto;
+}         
+
+.card-body p{
+  font-size: 13pt;
+}
+
+.btn.btn-secondary {
+  background-color: #A7A8A9;
+  border: none;
+}
+
+.btn.btn-secondary:hover {
+  background-color: #888B8D;
+  cursor: pointer;
+}
+
+.verticalCenter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.buttonControl {
+  margin-top: 16px;
+  display: flex;
+  width: 25rem;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.comment{
+	font:bold 15pt "Roboto";
+	padding:15px;
+}
+
+textarea {
+  width: 25rem;
+	height: 50px;
+	border-radius: .25rem;
+	border:1px solid silver;
+	font-size: 14pt;
+}
+
+.question{
+	border:0 none;
+	color: #C4D037;
+	background-color: white;
+}
+
+.question .questiontext {
+  visibility: hidden;
+  width: 180px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  font-size: 10pt;
+ 
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+}
+
+.question:hover .questiontext {
+  visibility: visible;
+}
+
+#task1 {
+	/*margin-top: -35%;*/
+}
+
+#task1 label {
+  margin: 0 auto;
+}
+
+#wq2{
+	padding-top: 30%;
+}
+
+#wq3{
+	padding-top: 50%;
+}
+
+.confirm{
+  background-color: #FFFFFF;
+	border:0 none;
+	cursor:pointer;
+	color: grey;
+  margin:auto;
+  display: block;
+  font-size: 20px;
+}
+
+.confirm:hover {
+  color: black;
+  background-color: white;
+}
+
+
+input[type=submit]{
+	padding: 5px 20px;
+	background:#C4D037;
+	border:0 none;
+	cursor:pointer;
+	-webkit-border-radius:10px;
+	border-radius:5px;
+	font:bold 16pt;
+	color: white;
+	margin-left: 16%;
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+input:hover {
+  color: #C4D137;
+  border:2px silver;
+  background-color: white;
+}
+
+#comment{
+	text-align: center;
+}
+
+@media screen and (max-height: 450px) {
+  #sidebar {padding-top: 15px;}
+  #sidebar a {font-size: 18px;}
+}
